@@ -102,12 +102,47 @@
         </div>
       </div>
       <!-- Banner styles-->
-      <div
-        class="relative bg-[url(./hockey_images/cup.png)] bg-cover h-[200px] lg:h-[550px] bg-center m-2 lg:m-0 rounded-xl"
-      >
-        <!-- banner sticker -->
+      <div class="relative carousel w-full h-[250px] lg:h-[550px]">
+        <!-- banner 1 -->
         <div
-          class="absolute -bottom-44 lg:right-10 lg:bottom-10 h-40 lg:w-[550px] bg-black rounded-xl p-4 lg:p-8 space-y-2"
+          id="slide1"
+          class="carousel-item relative w-full bg-[url(./hockey_images/cup.png)] bg-cover bg-center"
+        >
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a
+              href="#slide2"
+              class="btn btn-circle bg-black text-white border-none"
+              >❮</a
+            >
+            <a
+              href="#slide2"
+              class="btn btn-circle bg-black text-white border-none"
+              >❯</a
+            >
+          </div>
+        </div>
+        <!-- banner 2 -->
+        <div id="slide2" class="carousel-item relative w-full bg-[url(./hockey_images/playing.png)] bg-cover bg-center">
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a
+              href="#slide1"
+              class="btn btn-circle bg-black text-white border-none"
+              >❮</a
+            >
+            <a
+              href="#slide1"
+              class="btn btn-circle bg-black text-white border-none"
+              >❯</a
+            >
+          </div>
+        </div>
+        <!-- stciker div lg device-->
+        <div
+          class="hidden lg:flex flex-col absolute -bottom-20 lg:right-10 lg:bottom-10 bg-black h-40 lg:w-[550px] space-y-2 rounded-xl p-6"
         >
           <h3 class="text-white font-extrabold text-lg lg:text-2xl">
             Meet all the heroes from the field
@@ -117,19 +152,22 @@
             on an ice rink. Each team usually has six players
           </p>
         </div>
-        <!-- banner icons -->
-        <div class="absolute space-x-2 bottom-10 right-24 lg:left-10">
-          <i
-            class="fa-solid fa-chevron-left text-white text-center p-2 bg-black rounded-full h-8 w-8"
-          ></i>
-          <i
-            class="fa-solid fa-chevron-right text-white text-center p-2 bg-black rounded-full h-8 w-8"
-          ></i>
-        </div>
       </div>
+      <!-- stciker div samll device -->
+      <div
+          class="lg:hidden bg-black h-40 lg:w-[550px] space-y-2 rounded-xl p-6"
+        >
+          <h3 class="text-white font-extrabold text-lg lg:text-2xl">
+            Meet all the heroes from the field
+          </h3>
+          <p class="text-white opacity-70">
+            Ice hockey is a game between two teams who wear skates and compete
+            on an ice rink. Each team usually has six players
+          </p>
+        </div>
     </header>
 
-    <main class="container mx-auto mt-48 lg:mt-20">
+    <main class="container mx-auto lg:mt-20">
       <!-- hockeys club -->
       <hr class="border-dashed mx-4 lg:mx-auto my-6 dark:bg-gray-400" />
       <h3 class="text-4xl font-extrabold text-center">
@@ -285,42 +323,46 @@
           </div>
         </div>
       </div>
+      <!-- socia -->
+      <div>
+
+      </div>
     </main>
     <!-- footer section -->
-    <footer class="bg-[#131318]">
-      <div class="p-32 text-white text-center lg:text-start justify-around flex flex-col lg:flex-row">
-        <div class="flex-1/4 p-4">
-          <h3>Get In Touch</h3>
-          <p>Ice hockey is a game between two teams who wear skates</p>
-          <p>gmail</p>
-        <p>mobile</p>
+    <footer>
+      <div class="bg-[#131318] flex flex-col  lg:flex-row p-10 lg:p-32 gap-10 lg:gap-32  justify-center ">
+        <div class="text-center lg:text-start text-white text-opacity-60 space-y-2 ">
+          <h3 class="font-extrabold text-3xl text-white">Get In Touch</h3>
+          <p >Ice hockey is a game between two teams who wear skates</p>
+          <p><i class="fa-regular fa-envelope fa-fw text-red-600 mr-2"></i> hockeys@support.com</p>
+          <p> <i class="fa-solid fa-phone text-red-600 mr-3.5"></i>mobile</p>
         </div>
-        
-        <div class="flex2/4 flex gap-32">
-          <div>
-            <h4>Company</h4>
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-32 text-white text-opacity-60">
+          <div class="flex flex-col justify-start items-center lg:items-start space-y-2">
+            <h4 class="font-extrabold text-3xl text-white">Company</h4>
             <p>About us</p>
             <p>Leadership</p>
             <p>Careers</p>
             <p>News & Article</p>
             <p>Legal Notice</p>
           </div>
-          <div>
-            <h4>Company</h4>
-            <p>About us</p>
-            <p>Leadership</p>
-            <p>Careers</p>
-            <p>News & Article</p>
+          <div class="flex flex-col justify-start items-center lg:items-start space-y-2">
+            <h4 class="font-extrabold text-3xl text-white">Support</h4>
+            <p>Help Center</p>
+            <p>FAQ</p>
+            <p>Ticket Support</p>
+            <p>Contact Us</p>
             
           </div>
-        </div>
-        <div class="flex-1/4">
-          <h4>Company</h4>
-            <p>About us</p>
-            <p>Leadership</p>
-            <p>Careers</p>
-            <p>News & Article</p>
-            <p>Legal Notice</p>
+            <div class="col-span-2 lg:col-span-1 flex flex-col justify-start items-center lg:items-start space-y-2">
+              <h4 class="font-extrabold text-3xl text-white">Services</h4>
+              <p>Academy</p>
+              <p>Group Lession</p>
+              <p>Private Lession</p>
+              <p>Hockey for kids</p>
+              <p>Hockey for Adult</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
