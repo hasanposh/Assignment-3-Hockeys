@@ -102,31 +102,59 @@
         </div>
       </div>
       <!-- Banner styles-->
-      <div class="relative carousel w-full h-[250px] lg:h-[550px]">
-        <!-- banner 1 -->
-        <div
-          id="slide1"
-          class="carousel-item relative w-full bg-[url(./hockey_images/cup.png)] bg-cover bg-center"
-        >
+      <div class="mx-4 ">
+        <div class="relative carousel w-full h-[250px] lg:h-[550px] lg:mx-0 rounded-xl">
+          <!-- banner 1 -->
           <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            id="slide1"
+            class="carousel-item relative w-full bg-[url(./hockey_images/cup.png)] bg-cover bg-center"
           >
-            <a
-              href="#slide2"
-              class="btn btn-circle bg-black text-white border-none"
-              >❮</a
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-            <a
-              href="#slide2"
-              class="btn btn-circle bg-black text-white border-none"
-              >❯</a
-            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
           </div>
-        </div>
-        <!-- banner 2 -->
-        <div id="slide2" class="carousel-item relative w-full bg-[url(./hockey_images/playing.png)] bg-cover bg-center">
-          <!-- bannerr 2 sticker -->
-          <div class="hidden lg:flex flex-col absolute bg-black bottom-10 right-10 h-40 lg:w-[550px] space-y-2 rounded-xl p-6">
+          <!-- banner 2 -->
+          <div id="slide2" class="carousel-item relative w-full bg-[url(./hockey_images/playing.png)] bg-cover bg-center">
+            <!-- bannerr 2 sticker -->
+            <div class="hidden lg:flex flex-col absolute bg-black bottom-10 right-10 h-40 lg:w-[550px] space-y-2 rounded-xl p-6">
+              <h3 class="text-white font-extrabold text-lg lg:text-2xl">
+                Meet all the heroes from the field
+              </h3>
+              <p class="text-white opacity-70">
+                Ice hockey is a game between two teams who wear skates and compete
+                on an ice rink. Each team usually has six players
+              </p>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- stciker div lg device-->
+          <div
+            class="hidden lg:flex flex-col absolute -bottom-20 lg:right-10 lg:bottom-10 bg-black h-40 lg:w-[550px] space-y-2 rounded-xl p-6"
+          >
             <h3 class="text-white font-extrabold text-lg lg:text-2xl">
               Meet all the heroes from the field
             </h3>
@@ -135,37 +163,11 @@
               on an ice rink. Each team usually has six players
             </p>
           </div>
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a
-              href="#slide1"
-              class="btn btn-circle bg-black text-white border-none"
-              >❮</a
-            >
-            <a
-              href="#slide1"
-              class="btn btn-circle bg-black text-white border-none"
-              >❯</a
-            >
-          </div>
-        </div>
-        <!-- stciker div lg device-->
-        <div
-          class="hidden lg:flex flex-col absolute -bottom-20 lg:right-10 lg:bottom-10 bg-black h-40 lg:w-[550px] space-y-2 rounded-xl p-6"
-        >
-          <h3 class="text-white font-extrabold text-lg lg:text-2xl">
-            Meet all the heroes from the field
-          </h3>
-          <p class="text-white opacity-70">
-            Ice hockey is a game between two teams who wear skates and compete
-            on an ice rink. Each team usually has six players
-          </p>
         </div>
       </div>
       <!-- stciker div samll device -->
       <div
-          class="lg:hidden bg-black h-40 lg:w-[550px] space-y-2 rounded-xl p-6"
+          class="lg:hidden bg-black h-40 lg:w-[550px] space-y-2 rounded-xl p-6 mx-4"
         >
           <h3 class="text-white font-extrabold text-lg lg:text-2xl">
             Meet all the heroes from the field
@@ -621,9 +623,9 @@
           </div>
         </div>
         <!-- right column Form section -->
-        <div class="lg:col-span-2 space-y-6">
+        <div class="lg:col-span-2 space-y-6 mx-4 lg:m-0">
           <!-- name and email -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <!-- name -->
           <label class="form-control w-full ">
             <div class="label">
